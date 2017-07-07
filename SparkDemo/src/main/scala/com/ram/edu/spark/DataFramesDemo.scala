@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.monotonically_increasing_id
 
 object DataFramesDemo extends App {
-	val spark = SparkSession.builder.master("local").appName("spark session example").getOrCreate()
+	val spark = SparkSession.builder.master("local").appName("DataFramesDemo").getOrCreate()
 
 
 			val sqlContext = spark.sqlContext
