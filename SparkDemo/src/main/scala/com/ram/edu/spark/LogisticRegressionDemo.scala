@@ -7,9 +7,11 @@ import org.apache.spark.ml.classification.LogisticRegression
 object LogisticRegressionDemo extends App {
 
 	val homeDir = args(0) //Provide the project path as command line args
-			val spark = SparkSession.builder.master("local").appName("spark session example").getOrCreate()
+			val spark = SparkSession.builder.master("local").appName("LogisticRegressionDemo").getOrCreate()
 			// Load training data
-			val training = spark.read.format("libsvm").load(s"file:\\\\\\\\$homeDir\\data\\sample_libsvm_data.txt")
+			val fileName = s"file:\\\\\\$homeDir\\data\\sample_libsvm_data.txt"
+			println("########## :: "+fileName)
+			val training = spark.read.format("libsvm").load(fileName)
 
 			val lr = new LogisticRegression()
 	.setMaxIter(10)
