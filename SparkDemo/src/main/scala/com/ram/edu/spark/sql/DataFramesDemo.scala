@@ -1,7 +1,6 @@
-package com.ram.edu.spark
+package com.ram.edu.spark.sql
 
 import org.apache.spark._
-import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.monotonically_increasing_id
 

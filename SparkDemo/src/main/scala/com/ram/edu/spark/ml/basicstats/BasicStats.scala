@@ -1,4 +1,4 @@
-package com.ram.edu.spark.basicstats
+package com.ram.edu.spark.ml.basicstats
 
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.stat.{MultivariateStatisticalSummary, Statistics}

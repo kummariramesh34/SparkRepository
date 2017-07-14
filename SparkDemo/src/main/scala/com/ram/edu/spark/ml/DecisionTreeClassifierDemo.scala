@@ -1,4 +1,4 @@
-package com.ram.edu.spark
+package com.ram.edu.spark.ml
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.Pipeline
