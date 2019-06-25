@@ -10,7 +10,7 @@ import scala.util.matching.Regex
 object SQLInjection extends App{
   println("Test")
   
-  	val homeDir = s"C:\\Users\\Ramesh Kummari\\git\\SparkRepository\\SparkDemo\\data"
+  	val homeDir = args(0)
 			val spark = SparkSession.builder.master("local").appName("SQLInjection").getOrCreate()
 			val sqlContext = spark.sqlContext
 			// Load training data
