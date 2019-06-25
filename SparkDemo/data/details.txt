@@ -1,0 +1,179 @@
+sudo tcpdump -i lo -vv
+
+https://www.matec-conferences.org/articles/matecconf/pdf/2018/32/matecconf_smima2018_01004.pdf
+
+https://www.mkyong.com/spring-boot/spring-rest-hello-world-example/
+/home/ec2-user/spring-boot/spring-rest-hello-world
+mvn spring-boot:run
+curl -v localhost:8080/books
+
+
+
+
+https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?article=1727&context=etd_projects
+
+https://github.com/Scott-Park/MachineLearning/blob/master/Sql-Injection/source/ml_detect_sqli.py
+
+
+sudo easy_install pip
+sudo pip install pandas
+
+[ec2-user@ip-172-31-21-6 source]$ history
+    1  pwd
+    2  sudo tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354'
+    3  sudo tcpdump -p 8080 -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354'
+    4  sudo tcpdump -s 0 -A -vv
+    5  sudo tcpdump -s 0 -A -vv port 8080
+    6  sudo tcpdump -s 0 -v -n -l | egrep -i "POST /|GET /|Host:"
+    7  sudo tcpdump -s 0 -A -vv port 8080
+    8  sudo tcpdump -s 0 -v -n -l | egrep -i "POST /|GET /|Host:"
+    9  sudo tcpdump -s 0 -A -n -l
+   10  tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'
+   11  tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)' -i lo
+   12  sudo tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)' -i lo
+   13  sudo tcpdump -vv -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)' -i lo
+   14  tcpdump -i lo
+   15  sudo tcpdump -i lo
+   16  sudo tcpdump -i lo -vv
+   17  sudo yum update
+   18  pwd
+   19  locate
+   20  locate tcpdump
+   21  tcpdump --help
+   22  tcpdump -i any
+   23  sudo tcpdump -i any
+   24  sudo tcpdump -i any -c 5
+   25  sudo tcpdump -i any -c5 -nn port 80
+   26  pwd
+   27  java
+   28  sudo yum java install
+   29  sudo yum install java-1.8.0
+   30  java
+   31  git
+   32  yum install git
+   33  sudo yum install git
+   34  git
+   35  pwd
+   36  ls -ltr
+   37  git clone https://github.com/mkyong/spring-boot.git
+   38  ls -ltr
+   39  cd spring-boot/
+   40  ls -ltr
+   41  cd web-thymeleaf
+   42  ls -ltr
+   43  mvn spring-boot:run
+   44  sudo yum mvn install
+   45  sudo yum maven install
+   46  sudo yum apache-maven install
+   47  yum install apache-maven
+   48  sudo yum install apache-maven
+   49  sudo yum install maven
+   50  mvn
+   51  mvn spring-boot:run
+   52  mvn spring-boot:run &
+   53  curl get http://localhost:8080
+   54  sudo tcpdump -i any -c5 -nn port 80 > test.pcap &
+   55  curl get http://localhost:8080
+   56  p
+   57  ls -ltr
+   58  tail -100f test.pcap
+   59  sudo tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' > test.pcap &
+   60  curl get http://localhost:8080
+   61  tail -100f test.pcap
+   62  ls -ltr
+   63  sudo tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' > test.pcap &
+   64  curl get http://localhost:8080
+   65  tail -100f test.pcap
+   66  ps -ef | grep tcpdump
+   67  kill -9 720 721
+   68  sudo kill -9 720 721
+   69  sudo kill -9 744
+   70  sudo kill -9 745
+   71  ps -ef | grep tcpdump
+   72  tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420' > test.pcap &
+   73  curl get http://localhost:8080
+   74  tail -100f test.pcap
+   75  curl get http://localhost:8080
+   76  curl --help
+   77  curl -X GET  http://localhost:8080/
+   78  curl -X GET  http://localhost:8080//hello?name=abc
+   79  curl -X GET  http://localhost:8080/hello?name=abc
+   80  curl -X GET  http://localhost:8080/hello?name=Ram
+   81  curl -X GET  http://localhost:8080/hello?name="SELECT uname FROM nuke session"
+   82  curl -X GET  http://localhost:8080/hello?name='SELECT uname FROM nuke session'
+   83  curl -X GET  http://localhost:8080/hello?name=SELECT uname FROM nuke session
+   84  ps -ef | grep maven
+   85  kill -9 596
+   86  curl -X GET  http://localhost:8080/hello?name=SELECT uname FROM nuke session
+   87  netstat -nlp | grep 8080
+   88  jps
+   89  kill -9 609
+   90  jps
+   91  curl -X GET  http://localhost:8080/hello?name=SELECT uname FROM nuke session
+   92  pwd
+   93  cd ..
+   94  ls -tr
+   95  ls -ltr
+   96  cd spring-rest-hello-world/
+   97  mvn spring-boot:run
+   98  mvn spring-boot:run &
+   99  curl -v localhost:8080/books
+  100  pwd
+  101  curl -v -X POST localhost:8080/books -H "Content-type:application/json" -d "{\"name\":\"Spring REST tutorials\",\"author\":\"mkyong\",\"price\":\"9.99\"}"
+  102  pwd
+  103  ls -ltr
+  104  mkdir ml
+  105  ls -ltr
+  106  cd ml/
+  107  ls -ltr
+  108  which python
+  109  git clone https://github.com/Scott-Park/MachineLearning.git
+  110  ls -ltr
+  111  cd MachineLearning/
+  112  ls -ltr
+  113  cd Sql-Injection/
+  114  ls -ltr
+  115  cd source/
+  116  ls -ltr
+  117  cd trainingdata/
+  118  ls -ltr
+  119  pwd
+  120  cd ..
+  121  ls -ltr
+  122  vi ml_detect_sqli.py
+  123  python ml_detect_sqli.py
+  124  pip3 install pandas
+  125  pip install pandas
+  126  conda install pandas
+  127  yum install pandas
+  128  sudo yum install pandas
+  129  sudo pip3 install pandas
+  130  sudo yum install pip3
+  131  sudo yum install pip
+  132  sudo yum install python-pandas
+  133  sudo apt-get install python-numpy
+  134  sudo yum install python-numpy
+  135  sudo yum --help
+  136  sudo yum list
+  137  sudo yum list | grep python
+  138  sudo yum install python3-pandas
+  139  sudo yum install python-pandas
+  140  pip install pandas
+  141  sudo yum install conda
+  142  sudo yum install anaconda
+  143  sudo yum install update
+  144  sudo sudo yum install update
+  145  sudo sudo yum install list
+  146  sudo yum list
+  147  sudo yum list python
+  148  sudo yum list pandas
+  149  sudo yum list python-pands
+  150  sudo yum list python-pandas
+  151  sudo easy_install pip
+  152  sudo pip install pandas
+  153  python ml_detect_sqli.py
+  154  sudo pip install python-sklearn
+  155  sudo pip install sklearn
+  156  python ml_detect_sqli.py
+  157  vi ml_detect_sqli.py
+  158  history
