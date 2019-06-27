@@ -1,5 +1,5 @@
 sudo tcpdump -i lo -vv -nn port 8080
 
 
-curl -v -X POST localhost:8080/books -H "Content-type:application/json" -d "{\"name\":\"Hackathon-Demo\",\"author\":\"Ramesh\",\"price\":\"9.99\"}"
+curl -v -X POST localhost:8080/books -H "Content-type:application/json" -d "{\"name\":\"Hackathon-Demo-100\",\"author\":\"Ramesh ' AND 5103=4169 AND 'CEYB'='CEYB\",\"price\":\"9.99\"}"
 
